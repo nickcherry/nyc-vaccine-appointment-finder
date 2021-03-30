@@ -92,10 +92,10 @@ const search = async () => {
       });
 
       if (results.length) {
-        console.log(chalk.green.bold(`There may be appointments available for ${zip} on ${date}`));
+        console.log(chalk.green.bold(`There may be appointments available for ${zip}`));
         console.log(JSON.stringify(results, null, 2));
       } else {
-        console.log(chalk.red(`No appointments available for ${zip} on ${date}`));
+        console.log(chalk.red(`No appointments available for ${zip}`));
       }
     } catch (err) {
       console.error(chalk.red(`Error: ${err}`));
