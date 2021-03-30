@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "node ./search.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "moment": "^2.29.1",
+    "node-fetch": "^2.6.1"
+  }
+}
