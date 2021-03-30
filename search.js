@@ -2,6 +2,7 @@
 const chalk = require('chalk');
 const fetch = require('node-fetch');
 const moment = require('moment');
+const notifier = require('node-notifier');
 
 // Constants
 const refreshInterval = 60 * 1000;
@@ -95,6 +96,12 @@ const search = async () => {
       if (results.length) {
         console.log(chalk.green.bold(`There may be appointments available for ${zip}`));
         console.log(JSON.stringify(results, null, 2));
+
+        notifier.notify({
+          title: `Possible Vaccination Availability in ${zip}`,
+          message: 'See terminal for more information.',
+          sound: true,
+        });
       } else {
         console.log(chalk.red(`No appointments available for ${zip}`));
       }
