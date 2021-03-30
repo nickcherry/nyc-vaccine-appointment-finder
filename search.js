@@ -50,7 +50,11 @@ const zips = [
   '10009', // Union Square/Lower East Side
 ];
 
-const filteredCenterNames = ['Bronx Co-Op City Dreiser Community Center', 'Hospital for Special Surgery'];
+const filteredCenterNames = [
+  'Bronx Co-Op City Dreiser Community Center',
+  'Hospital for Special Surgery',
+  'Empire Outlets',
+];
 
 // Helpers
 const sleep = (duration) => new Promise((resolve) => setTimeout(resolve, duration));
