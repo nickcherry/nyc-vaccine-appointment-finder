@@ -54,6 +54,7 @@ const filteredCenterNames = [
   'Bronx Co-Op City Dreiser Community Center',
   'Hospital for Special Surgery',
   'Empire Outlets',
+  'HSS at Martin Van Buren High School',
 ];
 
 // Helpers
